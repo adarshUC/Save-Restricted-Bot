@@ -6,6 +6,9 @@
         "files",
         "bot"
     ],
+      "buildpacks": [{
+      "url": "heroku/python"
+    }],
     "repository": "https://github.com/ClubFX/Save-Restricted-Bot",
     "website": "https://github.com/ClubFX/Save-Restricted-Bot",
     "env": {
@@ -24,17 +27,6 @@
         "STRING": {
           "description": "Your telegram account session. Get it from https://replit.com/@ClubFX/GenerateStringSession?v=1",
           "required": true
-        }
-    },
-    "buildpacks": [
-        { 
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
         }
     }
 }
